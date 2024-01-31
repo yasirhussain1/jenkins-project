@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Website</title>
+    <title>Wildlife Photography</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,41 +30,32 @@
             margin: 20px 0;
         }
 
-        input[type="text"], input[type="password"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 4px;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
+        .photo {
+            width: 30%;
+            margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 10px;
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .photo p {
+            padding: 15px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
         }
 
         h2 {
@@ -75,37 +66,27 @@
 <body>
 
     <header>
-        <h1>Modern Website</h1>
+        <h1>Wildlife Photography</h1>
     </header>
 
     <div class="container">
         <section>
-            <h2>Login Form</h2>
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-
-                <button type="submit">Login</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+            <h2>Animal Gallery</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="https://via.placeholder.com/300" alt="Lion">
+                    <p>Lion</p>
+                </div>
+                <div class="photo">
+                    <img src="https://via.placeholder.com/300" alt="Elephant">
+                    <p>Elephant</p>
+                </div>
+                <div class="photo">
+                    <img src="https://via.placeholder.com/300" alt="Tiger">
+                    <p>Tiger</p>
+                </div>
+                <!-- Replace the above image URLs with your own high-quality animal photographs -->
+            </div>
         </section>
     </div>
 
