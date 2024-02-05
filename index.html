@@ -3,93 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife Photography</title>
+    <title>Mini Facebook</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f0f2f5;
         }
 
         header {
-            background-color: #333;
+            background-color: #3b5998;
             color: #fff;
+            padding: 10px;
             text-align: center;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            font-size: 24px;
         }
 
         section {
-            margin: 20px 0;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .photo {
-            width: 30%;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
             border-radius: 8px;
-            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .photo img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px 8px 0 0;
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
         }
 
-        .photo p {
-            padding: 15px;
-            text-align: center;
-            background-color: #333;
+        label {
+            margin-bottom: 8px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3b5998;
             color: #fff;
-            margin: 0;
-        }
-
-        h2 {
-            color: #333;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Wildlife Photography</h1>
+        Mini Facebook
     </header>
 
-    <div class="container">
-        <section>
-            <h2>Animal Gallery</h2>
-            <div class="gallery">
-                <div class="photo">
-                    <img src="https://via.placeholder.com/300" alt="Lion">
-                    <p>Lion</p>
-                </div>
-                <div class="photo">
-                    <img src="https://www.pexels.com/photo/photo-of-perched-parakeet-1661179" alt="Elephant">
-                    <p>Elephant</p>
-                </div>
-                <div class="photo">
-                    <img src="https://via.placeholder.com/300" alt="Tiger">
-                    <p>Tiger</p>
-                </div>
-                <!-- Replace the above image URLs with your own high-quality animal photographs -->
-            </div>
-        </section>
-    </div>
+    <section>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </section>
 
 </body>
 </html>
-
